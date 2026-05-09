@@ -255,8 +255,8 @@
                     <table class="table is-bordered is-striped is-fullwidth audio-table" style="vertical-align: middle;">
                         <thead>
                         <tr>
-                            <th style="width: 45%">Text Prompt</th>
-                            <th style="width: 45%">Lyrics</th>
+                            <th style="min-width:240px;">Text Prompt</th>
+                            <th style="min-width:240px;">Lyrics</th>
                             <th>GT</th>
                             <th>ID: 1</th>
                             <th>ID: 2</th>
@@ -271,9 +271,22 @@
                                 <td class="prompt-cell">
                                   slap bass, rhythmic, brass, soulful, upbeat, tight, funk
                                 </td>
-                                <td class="prompt-cell">
-                                  從今後就選擇沉默
+                                <!-- <td class="prompt-cell">
+                                  從今後就選擇沉默<br>
                                   選擇服從歲月如梭
+                                </td> -->
+                                <td class="p-0">
+                                  <div class="p-2 text-left">
+                                    <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-1" aria-expanded="false" aria-controls="lyric-1">
+                                      <i class="bi bi-music-note-list"></i> Show lyrics
+                                    </button>
+                                  </div>
+                                  <div id="lyric-1" class="collapse">
+                                    <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+                                      從今後就選擇沉默
+                                      選擇服從歲月如梭
+                                    </div>
+                                  </div>
                                 </td>
 
                                 <td style="text-align: center; vertical-align: middle;">
